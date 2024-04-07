@@ -1,0 +1,44 @@
+<div class="tab">
+  <button
+    type="button"
+    [ngClass]="{ highlight: htmlPreview === true }"
+    (click)="showText('html')"
+  >
+    HTML
+  </button>
+  <button
+    type="button"
+    [ngClass]="cssPreview ? 'highlight' : ''"
+    (click)="showText('css')"
+  >
+    CSS
+  </button>
+  <button type="button" [class.highlight]="jsPreview" (click)="showText('js')">
+    JS
+  </button>
+</div>
+<div>
+  @if(htmlPreview){
+  <div>
+    <p>
+      The HyperText Markup Language or HTML is the standard markup language for
+      documents designed to be displayed in a web browser.
+    </p>
+  </div>
+  } @if(cssPreview){
+  <div>
+    <p>
+      Cascading Style Sheets is a style sheet language used for describing the
+      presentation of a document written in a markup language such as HTML or
+      XML.
+    </p>
+  </div>
+  } @if(jsPreview){
+  <div>
+    <p>
+      JavaScript, often abbreviated as JS, is a programming language that is one
+      of the core technologies of the World Wide Web, alongside HTML and CSS.
+    </p>
+  </div>
+  }
+</div>

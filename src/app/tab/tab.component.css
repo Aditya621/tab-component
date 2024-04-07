@@ -1,0 +1,16 @@
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 6px 10px;
+  border: 1px solid black;
+}
+
+.highlight {
+  background-color: blueviolet;
+  border-radius: 4px;
+  color: white;
+}
