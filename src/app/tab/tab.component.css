@@ -7,10 +7,10 @@
 button {
   padding: 6px 10px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .highlight {
   background-color: blueviolet;
-  border-radius: 4px;
   color: white;
 }

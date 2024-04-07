@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   template: `
     <h1>Hello from {{ name }}!</h1>
+    
     <!-- <a target="_blank" href="https://angular.dev/overview">
       Learn more about Angular
     </a> -->
